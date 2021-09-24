@@ -1,0 +1,50 @@
+1.css优先级
+	特性：不同选择器具有不同的优先级，优先级高的选择器样式会覆盖优先级低的选择器样式
+	优先级公式：继承<通配符选择器<标签选择器<类选择器<id选择器<行内样式<！important
+	注意：！important写在属性值后面，分号的前面
+
+2.权重叠加计算
+	场景：如果是复合选择器，此时需要通过权重叠加计算方法。
+	计算公式（0，0，0，0）
+                             （行内样式个数，id选择器个数，类选择器个数，标签选择器个数）
+
+3.盒子模型的介绍
+	css中规定每个盒子分别由：内容区域，内边距区域，边框区域，外边距区域构成。
+
+4.内容区域的宽度和高度
+	width	height
+
+5.border相关属性介绍
+	border-width  边框粗细     数字+px
+	border-style    边框样式     实线solid，虚线dashed，点线dotted
+	border-color   颜色取值
+	连写形式：border：10px solid red；
+
+6.padding取值
+	作用：设置边框与内容区域之间的距离
+	内边距单方向设置：padding+方位名词
+	
+7.盒子的计算公式
+	宽度=左border+左padding+右padding+右border
+	高度类似
+
+8.css3盒模型（自动内减）
+	属性名：box-sizing
+	属性值：border-box
+
+9.外边距-取值
+	属性名：margin
+	类似于padding
+
+10，margin-left	让当前盒子往右移动
+        margin-right    让右边的盒子往右移动
+        margin-top	让当前盒子往下移动
+        margin-bottom  让下面的盒子往下移动
+
+11.清楚默认内外边距
+	通配符选择器，并集选择器
+
+12.外边距折叠现象
+	场景：互相嵌套的块级元素，父子元素紧贴的margin-top会合并作用在父元素上导致父元素一起往下移动
+
+13.给行内元素设置margin和padding时，水平方向的margin和padding布局中有效，垂直方向的margin和padding布局中无效。

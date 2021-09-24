@@ -1,0 +1,78 @@
+1.定位
+	应用场景：可以解决盒子与盒子之间的层叠问题；可以让盒子始终固定在屏幕中的某个位置。
+	属性名：position
+	常见属性值：static	relative	absolute	fixed
+
+2.静态定位
+	静态定位是默认值，就是之前的标准流
+	代码：position：static
+
+3.相对定位
+	自恋型定位，相对于自己之前的位置进行移动
+	代码：position：relative
+
+4.绝对定位
+	代码：position：absolute
+	特点：需要配合方位属性实现移动，默认相对于浏览器可视区域进行移动	
+	祖先元素中没有定位，默认相对于浏览器进行移动；祖先元素中有定位，相对于最近的有定位的祖先元素进行移动
+
+5.子绝父相（子元素绝对定位，父元素相对定位） 
+	子绝父相水平居中：
+		left： 50% 	
+		transform：translateX（-50%）
+	水平垂直都居中：
+		left： 50%
+		top：50% 	
+		transform：translate（-50% ，-50%）
+
+6.底部半透明遮罩效果
+	backgroundcolor：rgb（0，0，0，.5）
+
+7.固定定位
+	代码：position：fixed
+	应用场景：让盒子固定在屏幕中的某个位置
+
+8.元素层级关系
+	标准流<浮动<定位
+   不同定位之间的层级关系
+	html写在下面的定位层级更高
+
+9.更改定位元素的层级
+	属性名：z-index
+	属性值：数字   数字越大，层级越高
+
+10.垂直对齐方式
+	场景：解决行内/行内块元素垂直对齐方式
+	属性名：vertical-align
+	属性值：baseline	默认，基线对齐
+		top	顶部对齐
+		midddle	中部对齐
+		bottom	底部对齐
+
+
+11.光标类型
+	属性名：cursor
+	属性值：default	默认值
+		pointer	小手效果
+		text	工字形
+		move	十字光标
+
+12.边框圆角
+	属性名：border-radius
+	常见取值：数字+px
+
+13.溢出部分显示效果
+	属性名：overflow
+	属性值：visible	默认值
+		hidden	溢出部分隐藏
+		scroll	无论是否溢出，都显示滚动条
+		auto	根据是否溢出，自动显示或隐藏滚动条
+
+14.元素本身隐藏
+	场景：让某元素本身在屏幕中不可见，如鼠标hover之后元素隐藏
+	常见属性：visibility：hidden	隐藏元素本身，并且在网页中占位置。
+		display：none	隐藏元素本身，并且在网页中不占位置
+
+15.边框合并
+	代码：border-collapse：collapse
+  
