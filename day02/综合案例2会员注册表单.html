@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会员注册表单</title>
+</head>
+<body>
+    <h1>青春不常在，抓紧谈恋爱</h1>
+    <hr>
+    <form>
+        <!-- placehoder提醒用户输入文本 -->
+        昵称：<input type="text" placeholder="请输入昵称"><br><br>
+        密码：<input type="password" placeholder="请输入密码"><br><br>
+        <!-- name分组有相同name属性值的单选框为一组  checked默认选中 radio单选框，多选一-->
+        性别：<label><input type="radio" name="sex" checked>男</label>
+        <label><input type="radio" name="sex">女<br><br></label>
+        生日：<input type="date"><br><br>
+        <!-- select下拉菜单标签 option下拉每一项 selecte默认选中 -->
+        城市：<select>
+            <option>北京</option>
+            <option>上海</option>
+            <option>广州</option>
+            <option>深圳</option>
+            <option selected>天津</option>
+        </select><br><br>
+        <!-- lable标签 用于绑定内容与表单的关系-->
+        婚姻状况：<label><input type="radio" name="condition">未婚</label>
+        <label><input type="radio" name="condition">已婚</label>
+        <label><input type="radio" name="condition">保密</label><br><br>
+        <!-- checkbox多选框 -->
+        兴趣爱好：<label><input type="checkbox">抽烟</label>
+        <label><input type="checkbox">喝酒</label>
+        <label><input type="checkbox">烫头</label><br><br>
+        <!-- 文本域标签 -->
+        个人介绍：<br><br><textarea cols="50" rows="15">
+        </textarea>
+        <!-- ul无序列表整体，li无序列表每一项 -->
+        <ul>
+            <h2>我承诺</h2>
+            <li>年满18岁，单身</li>
+            <li>抱着严肃的态度</li>
+            <li>真诚寻找另一半</li>
+        </ul>
+        <label><input type="radio">我同意所有条款</label><br><br>
+        <!-- submit：提交按钮，用于提交  reset：重置按钮，用于重置 需配合form标签使用，用form标签把表单标签一起包裹起来-->
+        <button submit>免费注册</button>
+        <button reset>重置</button>
+    </form>
+</body>
+</html>

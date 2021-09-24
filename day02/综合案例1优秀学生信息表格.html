@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优秀学生信息表格</title>
+</head>
+<body>
+    <!-- table表格整体，包裹多个tr -->
+    <table border="1" width="350" height="450">
+        <!-- caption表格大标题 -->
+        <caption><h3>优秀学生信息表格</h3></caption>
+        <thead>
+            <!-- tr表格每行,td表格单元格 -->
+            <tr>
+                <td>年级</td>
+                <td>姓名</td>
+                <td>学号</td>
+                <td>班级</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- rowspan合并列属性，后接合并数量 -->
+                <td rowspan="2">高三</td>
+                <td>张三</td>
+                <td>110</td>
+                <td>三年二班</td>
+            </tr>
+            <tr>
+                <td>赵四</td>
+                <td>120</td>
+                <td>三年三班</td>
+            </tr>
+        <tfoot>
+            <tr>
+                <td>评语</td>
+                <!-- colspan合并行属性 -->
+                <td colspan="3">你们都很优秀</td>
+            </tr>
+        </tfoot>
+        </tbody>
+    </table>
+</body>
+</html>
